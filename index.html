@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EuroMed's Scroll Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="action.css">
+    <link rel="stylesheet" href="cardopen.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="footerEffect.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="Products.css">
+    <link rel="stylesheet" href="onScroll.js">
+    <link rel="stylesheet" href="media.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="projects.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+</head>
+<body>
+
+<!-- Progress Scroll bar -->
+<div id="progressbar"></div>
+    <div id="scrollpath">
+    </div>
+
+
+
+<!-- Navbar Section -->
+
+
+<nav class="navbar">
+    <div class="navbar__container">
+        <a href="#home" id="navbar__logo"><img src="images/Euromed_logo.png" alt=""></a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="#home" class="navbar__links" id="home-page"><span>H</span>ome</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#about" class="navbar__links" id="about-page"><span>A</span>bout</a>
+            </li>
+
+            <li class="navbar__item">
+                <a href="#products" class="navbar__links" id="product-page">Products</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#services" class="navbar__links" id="service-page">Services</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="#footer" class="buttons" id="signup">
+                    Contact us!</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+
+
+<div class="overflow">
+
+<!-- Hero Section -->
+
+
+<div class="banner">
+    <video autoplay muted loop>
+        <source src="videos/ezgif.com-gif-maker (2).mp4" type="video/mp4">
+    </video>
+    
+<div class="hero" id="home">
+    <div class="bacgroundcolor">
+    <section id="sectionone" class="screen">
+      <div id="scene">
+
+     
+ 
+
+
+      </div>
+    </section>
+</div>
+    <div class="hero__container">
+        <div class="star" id="stars">
+        </div>
+        <div class="star" id="stars2">
+        </div>
+        <div class="star" id="stars3">
+        </div>
+        <h1 class="hero__heading"><span>We</span> <span>care,</span> <span>Therefore</span> <span>we</span> <span>are</span></h1>
+        <p class="hero__description"><span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Hi-end:Prestige and niche:Premium Quality from Europe" ></span><span class="cursor" data-cursorDisplay="|" data-owner="some-id"></span></p>
+        <div class="book-btn">
+            <a href="#about" class="table-btn hvr-underline-from-center">get started</a>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<!-- About Section -->
+
+<div class="aboutSection">
+
+
+
+<article class="post" id="about">
+    <div>
+      <div class="absolute-bg" style="background-image: url('images/pexels-anthony-shkraba-5215023.jpg');"></div>
+    </div>
+    <div class="post__container">
+      <span class="post__category">About Us</span>
+      
+      <div class="post__content">
+        <header>
+          <time class="post__time">EuroMed</time>
+          <h1 class="post__header revealOnScroll"><span>What</span> <span>We</span> <span>Do!</span></h1>
+        </header>
+      
+        <p class="post__text">EuroMed Technologies targets at the Hi-end ,prestige and niche medical equipment market in
+            Hong Kong and SE Asian countries .We are a company established in Hong Kong offering a
+            one-stop shop solution to customers by supplying a wide Range of equipment and systems for
+            hospitals ,clinic,medical /healthcare centers and laboratories. We have demonstrated our corporate responsibility by hiring graduates of local technical institutes and universities allowing us to recieve the "Partner Employer Award 2017/18" presented by the Hong Kong General Chamber of small and medium business.
+        </p>
+      </div>
+      <div class="post__link">
+        <a href="#products">Move On</a>
+      </div>
+    </div>
+  </article>
+
+
+
+
+</div>
+
+
+
+
+
+
+<!-- Banner for products section -->
+
+<section id="products">
+<div class="offer__bg">
+    <div class="offer__data">
+        <h2 class="offer__title">Products</h2>
+        <p class="offer__description">Our ranges of products of advanced robotics, medical accessories/machines and equipments!</p>
+
+        <a href="#productspage" class=" buttonEff">View Products!</a>
+    </div>
+</div>
+
+
+</section>
+
+
+
+<!-- Products Page -->
+
+
+<div class="whole" id="productspage">
+
+
+    <div class="wholeBody">
+        <div class="cardnd">
+            <div class="circle"></div>
+            <div class="content">
+                <h2><img class="logoPepsi" src="images/logo_sesto.png" alt=""></h2>
+                <p class="contentPepsi">SESTO Prime is the next generation of autonomous robotics solutions designed to improve productivity and reduce human error in manufacturing processes. Equipped with cutting edge intelligence and planning capability, SESTO Prime’s 7-axis robot arm provides high freedom of movement even in tight spaces, allowing the autonomous mobile robot (AMR) to pick, place and transport payloads up to 20 kilogrammes and carry out machine tending applications.</p>
+                <a href="https://www.sestorobotics.com/products/sesto-prime/">Learn More!</a>
+            </div>
+            <img class="productPepsi" src="images/SESTO-Prime-side-left-resized.png" alt="Prime">
+        </div>
+        </div>
+
+        <div class="wholeBody">
+            <div class="cardnd">
+                <div class="circle"></div>
+                <div class="content">
+                    <h2><img class="logoPepsi" src="images/logo_sesto.png" alt=""></h2>
+                    <p class="contentPepsi">SESTO HealthGUARD is a dual-function Autonomous Mobile Disinfectant Robot that can efficiently and effectively disinfect facilities round-the-clock, eliminating 99.9% of bacteria, germs and viruses. SESTO HealthGUARD is designed to self-navigate and manoeuvre around tight places, avoiding obstacles and people, making it suitable for many indoor facilities. Powered by SESTO’s proprietary user interface, operators can easily set up cleaning missions, schedules and deployment on a tablet or laptop.</p>
+                    <a href="https://www.sestorobotics.com/products/healthcare-robotics-solutions-sesto-healthguard/">Learn More!</a>
+                </div>
+                <img class="productPepsi" src="images/Sesto-2.png" alt="Prime">
+            </div>
+            </div>
+
+            <div class="wholeBody">
+                <div class="cardnd">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <h2><img class="logoPepsi" src="images/logo_sesto.png" alt=""></h2>
+                        <p class="contentPepsi">SESTO Magnus is a bi-directional, compact Autonomous Mobile Robot that is able to carry payloads up to 300kg despite its compact size. Having the highest payload rating in its compact class, SESTO Magnus is specially built for tight navigation in space-scarce facilities whilst avoiding obstacles in its path. Powered by SESTO’s proprietary user-friendly interface, operators can easily deploy SESTO Magnus for material transportation using a tablet or laptop. </p>
+                        <a href="https://www.sestorobotics.com/products/sesto-magnus/">Learn More!</a>
+                    </div>
+                    <img class="productPepsi2" src="images/Magnus-hero-1_no-bgk.png" alt="Prime">
+                </div>
+                </div>
+
+                <div class="wholeBody">
+                    <div class="cardnd">
+                        <div class="circle"></div>
+                        <div class="content">
+                            <h2><img class="logoPepsi" src="images/logo_sesto.png" alt=""></h2>
+                            <p class="contentPepsi">SESTO Element is an intelligent and multipurpose Autonomous Mobile Robot (AMR) designed for easy implementation and deployment at your factory facility. Using the same industrial-grade AMR mobile platform, top modules such as shelves, containers, jacking decks or a robotic arm can be easily integrated with the Autonomous Mobile Robot (AMR), making it a highly versatile and adaptable solution to deliver and transfer various payloads on the factory floor or warehouse. </p>
+                            <a href="https://www.sestorobotics.com/products/sesto-element/">Learn More!</a>
+                        </div>
+                        <img class="productPepsi2" src="images/SESTO-Element-side-new-cropped-LR-1.png" alt="Prime">
+                    </div>
+                    </div>
+
+</div>
+<!-- Tric -->
+<div class="whole">
+<div class="wholeBody">
+    <div class="cardtri">
+        <div class="circle"></div>
+        <div class="content">
+            <h2><img class="logoPepsi" src="images/ani-bg-kam1-removebg-preview.png" alt=""></h2>
+            <p class="contentPepsi">
+                Cooling products of high quality: <br>
+                In the cooling products section you will find tritec's Medical refrigerators, deep freezers, icemakers – profit from tritec®’s high quality workmanship that makes each of our devices low in maintenance. <br><span>click the button below!</span></p>
+            <a href="https://www.tritec-klima.de/">Learn More!</a>
+        </div>
+        <img class="productPepsi" src="images/produkt-lef-1neu-removebg-preview.png" alt="Prime">
+    </div>
+    </div>
+
+    <div class="wholeBody">
+        <div class="cardtri">
+            <div class="circle"></div>
+            <div class="content">
+                <h2><img class="logoPepsi" src="images/ani-bg-kam1-removebg-preview.png" alt=""></h2>
+                <p class="contentPepsi">Elaborate climatic products: <br>
+                    In tritec's elaborate climatic section there are 5 sub catagories. Reliability is essential in the field of HVAC technology. Find out more about our heating cabinets and other devices from tritec®’s product range. <br><span>click the button below!</span></p>
+                <a href="https://www.tritec-klima.de/">Learn More!</a>
+            </div>
+            <img class="productPepsi" src="images/image14-171x300-removebg-preview.png" alt="Prime">
+        </div>
+        </div>
+</div>
+
+<!-- Modula -->
+<div class="whole">
+    <div class="wholeBody">
+<div class="card2nd">
+    <div class="circle"></div>
+    <div class="content">
+        <h2><img class="logoPepsi" src="images/Modula_Logo-removebg-preview.png" alt=""></h2>
+        <p class="contentPepsi">Modula's vertical solutions are designed to save space, time and improve efficiency. It is 100% costomizable and is designed to the "good to man" principle. Operetors no longer have to move through warehouses to pick up or deposit the goods. The are 4 different solutions to your vertical problems. Which one suits you best?</p>
+        <a href="https://www.modula.eu/products/vertical-solutions/">Learn More!</a>
+    </div>
+    <img class="productPepsi" src="images/modula-lift_92503-removebg-preview.png" alt="Prime">
+</div>
+</div>
+
+
+    <div class="wholeBody">
+<div class="card2nd">
+    <div class="circle"></div>
+    <div class="content">
+        <h2><img class="logoPepsi" src="images/Modula_Logo-removebg-preview.png" alt=""></h2>
+        <p class="contentPepsi">Modula's vertical solutions are designed to save space, time and improve efficiency. It is 100% costomizable and is designed to the "good to man" principle. Operetors no longer have to move through warehouses to pick up or deposit the goods. The are 4 different solutions to your vertical problems. Which one suits you best?</p>
+        <a class="Hor" href="https://www.modula.eu/products/vertical-solutions/">Horizontal solution!</a>
+        <a class="Pick" href="https://www.modula.eu/products/vertical-solutions/">Picking Solution!</a>
+    </div>
+    <img class="productPepsi1" src="images/modulahc_75522-removebg-preview.png" alt="Prime">
+</div>
+</div>
+</div>
+
+<!-- Amp  -->
+
+<div class="whole">
+
+
+        <div class="wholeBody">
+            <div class="cardi">
+                <div class="circle"></div>
+                <div class="content">
+                    <h2><img class="logoPepsi" src="images/Picture1.png" alt=""></h2>
+                    <p class="contentPepsi">The BP868F is an one-touch full automatic blood pressure monitor which offers accurate and precise results. This device automatically determines the pressure to apply to the cuff, creating the optimum measuring conditions to provide accurate measurement results.</p>
+                    <a class="Hor" href="http://www.ampall.com/">Learn more!</a>
+                </div>
+                <img class="productPepsi1" src="images/bloodpressure-removebg-preview.png" alt="Prime">
+            </div>
+            </div>
+
+    
+
+                <div class="wholeBody">
+                    <div class="cardi">
+                        <div class="circle"></div>
+                        <div class="content">
+                            <h2><img class="logoPepsi" src="images/Picture1.png" alt=""></h2>
+                            <p class="contentPepsi">The osteo Checker measure a bone mineral density (BMD) of forearm, calcaneus and grows plate. It is BMD measurement method to show high resolution images after scanning entire measurement area.</p>
+                            <a class="Hor" href="http://www.ampall.com/">Learn more!</a>
+                        </div>
+                        <img class="productPepsi1" src="images/bonedensitometer-removebg-preview.png" alt="Prime">
+                    </div>
+                    </div>
+
+
+</div>
+
+
+        
+        
+
+        <div class="wholepepsi">
+            <div class="wholebody">
+                <div class="wholewrapper">
+
+                <div class="container1">
+                    <div class="card1">
+                        <div class="content-11">
+                            <span class="arrow-left">
+                                <i class=""></i>
+                            </span>
+                            <span class="like">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                            </span>
+                            <div class="main-image">
+                                <img id="remote1" src="images/download-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content-22">
+                            <div class="sub-image">
+                                <a><img onclick="change(this)" src="images/download__2_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change(this)" src="images/download__3_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change(this)" src="images/download__4_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change(this)" src="images/download-removebg-preview (1).png" alt=""></a>
+                                <a><img onclick="change(this)" src="images/download__5_-removebg-preview.png" alt=""></a>
+                            </div>
+                            
+                        </div>
+                        <div class="content-33">
+                            <div class="branding1">
+                                <span>Blood Line Products</span>
+                                <h4>Apparecchi Scientifici</h4>
+                            </div>
+                            
+                            <div class="paragraph1">
+                                <p>Apparecchi Scientifici's blue line consists
+                                    5 categories for the "blue line" including 
+                                    frezzers, bank refrigerators, thawers, incubator and agitators
+                                    freezers, plasma freezers and portables for you to choose from.... 
+                                    <br><span>Click the button to learn more!</span>
+                                </p>
+                            </div>
+                            <div class="price1">
+                                <span class="bloodline">Blood</span>
+                                <span class="bloodline">Line</span>
+                                <div class="space"></div>
+                                <a href="https://www.kwkw.it/en/products/blood-line/">LEARN MORE!</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="card">
+                        <div class="content-1">
+                            <span class="arrow-left">
+                                <i class=""></i>
+                            </span>
+                            <span class="like">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                            </span>
+                            <div class="main-image">
+                                <img id="remote2" src="images/download__10_-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content-2">
+                            <div class="sub-image">
+                                <a><img onclick="change1(this)" src="images/download__9_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change1(this)" src="images/download__6_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change1(this)" src="images/download__7_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change1(this)" src="images/download__8_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change1(this)" src="images/download__10_-removebg-preview.png" alt=""></a>
+                            </div>
+                            
+                        </div>
+                        <div class="content-3">
+                            <div class="branding">
+                                <span>Blueline Line Products</span>
+                                <h4>Apparecchi Scientifici</h4>
+                            </div>
+                            
+                            <div class="paragraph">
+                                <p>Apparecchi Scientifici's blue line consists
+                                    5 categories for the "blue line" including 
+                                    frezzers, (combined) refrigerators and freezers,
+                                    Refrigerators, Ice makers and portables for you to choose from.... 
+                                    <br><span>Click the button to learn more!</span>
+                                </p>
+                            </div>
+                            <div class="price">
+                                <span class="blueline">Blue</span>
+                                <span class="blueline">Line</span>
+                                <div class="space"></div>
+                                <a href="https://www.kwkw.it/en/products/blue-line/">LEARN MORE!</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="container2">
+                    <div class="card2">
+                        <div class="content-12">
+                            <span class="arrow-left">
+                                <i class=""></i>
+                            </span>
+                            <span class="like">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                            </span>
+                            <div class="main-image">
+                                <img id="remote3" src="images/download__11_-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content-222">
+                            <div class="sub-image">
+                                <a><img onclick="change2(this)" src="images/download__11_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change2(this)" src="images/download__12_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change2(this)" src="images/download__13_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change2(this)" src="images/download__14_-removebg-preview.png" alt=""></a>
+                            </div>
+                            
+                        </div>
+                        <div class="content-32">
+                            <div class="branding2">
+                                <span>Greenline Products</span>
+                                <h4>Apparecchi Scientifici</h4>
+                            </div>
+                            
+                            <div class="paragraph2">
+                                <p>Apparecchi Scientifici's Green line consists 4 categories for the "Green line" including incubators, chambers, baths, and incubators for you to choose from....
+                                    <br><span>Click the button to learn more!</span>
+                                </p>
+                            </div>
+                            <div class="price2">
+                                <span class="Greenline">Green</span>
+                                <span class="Greenline">Line</span>
+                                <div class="space"></div>
+                                <a href="https://www.kwkw.it/en/products/green-line/">LEARN MORE!</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="container4">
+                    <div class="card4">
+                        <div class="content-14">
+                            <span class="arrow-left">
+                                <i class=""></i>
+                            </span>
+                            <span class="like">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                            </span>
+                            <div class="main-image">
+                                <img id="remote4" src="images/download__15_-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content-24">
+                            <div class="sub-image">
+                                <a><img onclick="change3(this)" src="images/download__15_-removebg-preview.png" alt=""></a>
+                                <a><img onclick="change3(this)" src="images/download-removebg-preview (2).png" alt=""></a>
+                            </div>
+                            
+                        </div>
+                        <div class="content-34">
+                            <div class="branding">
+                                <span>RedLine Products</span>
+                                <h4>Apparecchi Scientifici</h4>
+                            </div>
+                            
+                            <div class="paragraph4">
+                                <p>Apparecchi Scientifici's Red line consists 2 categories for the "Red line" including dessicators and sterilizers for you to choose from.... 
+                                    <br><span>Click the button to learn more!</span>
+                                </p>
+                            </div>
+                            <div class="price4">
+                                <span class="redline">Red</span>
+                                <span class="redline">Line</span>
+                                <div class="space"></div>
+                                <a href="https://www.kwkw.it/en/products/red-line/">LEARN MORE!</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+            </div>    
+</div>
+</div>
+
+
+
+<a href="https://www.systec-lab.com/"><img src="images/logo-removebg-preview.png" alt="" class="h2"></a>
+ <!--========== ACCESSORIES ==========-->
+ <section class="accessory section bd-container" id="accessory">
+
+    <div class="accessory__container bd-grid">
+        <div class="accessory__content">
+            <img src="images/Media-preparator-Systec-GmbH-removebg-preview.png" alt="" class="accessory__img">
+            <h3 class="accessory__title txtSys">Media Preparators</h3>
+            <span class="accessory__category txtSys">Systec Mediaprep Series</span>
+            <span class="accessory__preci">Systec</span>
+            <a href="https://www.systec-lab.com/mediapreparators/" class="buttonnew accessory__button"><i class='fas fa-eye'></i></a>
+        </div>
+
+        <div class="accessory__content">
+            <img src="images/laboratory-sterilizer-removebg-preview.png" alt="" class="accessory__img">
+            <h3 class="accessory__title txtSys">vertical floor-standing autocalves</h3>
+            <span class="accessory__category txtSys">Systec V-Series</span>
+            <span class="accessory__preci">Systec</span>
+            <a href="https://www.systec-lab.com/autoclaves/vertical-top-loading-autoclaves-40-150-l/" class="buttonnew accessory__button"><i class='fas fa-eye'></i></a>
+        </div>
+
+        <div class="accessory__content">
+            <img src="images/new-laboratory-sterilizer-removebg-preview.png" alt="" class="accessory__img">
+            <h3 class="accessory__title txtSys">Horizontal floor-standing autocalves</h3>
+            <span class="accessory__category txtSys">Systec H-Series</span>
+            <span class="accessory__preci">Systec</span>
+            <a href="https://www.systec-lab.com/autoclaves/horizontal-floor-standing-autoclaves-65-1580-l/" class="buttonnew accessory__button"><i class='fas fa-eye'></i></a>
+        </div>
+
+        <div class="accessory__content">
+            <img src="images/Systec-D-Series-sterilizer-removebg-preview.png" alt="" class="accessory__img">
+            <h3 class="accessory__title txtSys">Horizontal bench-top autocalves</h3>
+            <span class="accessory__category txtSys">Systec D-Series</span>
+            <span class="accessory__preci">Systec</span>
+            <a href="https://www.systec-lab.com/autoclaves/horizontal-bench-top-autoclaves-23-200-l/" class="buttonnew accessory__button"><i class='fas fa-eye'></i></a>
+        </div>
+
+        <div class="accessory__content">
+            <img src="images/Systec-Mediafill-plate-pourer-removebg-preview.png" alt="" class="accessory__img">
+            <h3 class="accessory__title txtSys">Plate pourer and tube filter</h3>
+            <span class="accessory__category">Systec Mediafill</span>
+            <span class="accessory__preci">Systec</span>
+            <a href="https://www.systec-lab.com/mediafill-en/" class="buttonnew accessory__button"><i class='fas fa-eye'></i></a>
+        </div>
+        <div class="accessory__content">
+            <img src="images/Sterilizer-for-the-laboratory-Systec-H-Series-2D-removebg-preview.png" alt="" class="accessory__img">
+            <h3 class="accessory__title txtSys">Double-door autocalves</h3>
+            <span class="accessory__category">Systec H-series 2D</span>
+            <span class="accessory__preci">Systec</span>
+            <a href="https://www.systec-lab.com/autoclaves/pass-through-autoclaves-90-1580-l/" class="buttonnew accessory__button"><i class='fas fa-eye'></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- <div class="imagebackground">
+<a href="http://www.osteosys.com/englsh/"><img src="images/logoOst.png" alt=""></a>
+</div> -->
+
+<!-- Slide Show section -->
+
+<div class="slider" id="slider">
+    <figure>
+        <a href="http://www.osteosys.com/englsh/3_7_1.html"><img src="images/wholebodyDXA.jpg" alt=""></a>
+        <a href="http://www.osteosys.com/englsh/3_6_1.html"><img src="images/halfbodyDXA.jpg" alt=""></a>
+        <a href="http://www.osteosys.com/englsh/3_5_1.html"><img src="images/centralDXA.jpg" alt=""></a>
+        <a href="http://www.osteosys.com/englsh/3_4_1.html"><img src="images/Periph DXA.jpg" alt=""></a>
+        <a href="http://www.osteosys.com/englsh/3_3_1.html"><img src="images/perpheral2DXA.jpg" alt=""></a>
+        <a href="http://www.osteosys.com/englsh/3_8_1.html"><img src="images/ultrasound BMD.jpg" alt=""></a>
+        <a href="http://www.osteosys.com/englsh/3_7_1.html"><img src="images/wholebodyDXA.jpg" alt=""></a>
+    </figure>
+</div>
+
+
+<!-- Elderly products -->
+
+
+     
+
+    <div class="Elderly">
+
+
+
+        <article class="post" id="about">
+            <div>
+              <div class="absolute-bg" style="background-image: url('images/josh-appel-0nkFvdcM-X4-unsplash.jpg');"></div>
+            </div>
+            <div class="post__container">
+              <span class="post__category">EuroMed</span>
+              
+              <div class="post__content">
+                <header>
+                  
+                    <a href="https://www.securesafetysolutions.com/"><img class="post__time1" src="images/cropped-SecureSafetySolutions_logo3.png" alt=""></a>
+                  
+                </header>
+              
+                <p class="post__text">Personal Safety Corporation is devoted to being your Patient-Centered, Solutions-Based, Cost-Effective partner for all your fall management,  wandering prevention and patient safety product needs. We challenge ourselves daily to be your #1 patient safety products supplier. Our vision is to listen, learn & lead the industry in developing the highest quality products at the lowest manufacturer direct prices. When you partner with PSC you can count on being treated as our #1 customer by our entire team. We Are Here To Exceed Your Expectations!
+    
+                    Reduce Falls…Reduce Costs…Reduce Infections!
+                    With over 6 catagories for you to choose from, we offer a wide range of solutions to tackle all your problems. The 6 catagories consistes of fall & wandering Prevention, fall protection, transfer & standing aids, wheelchair cushions & storage bags, footwear and wound prevention. Please click the button below to visit the official site to find out / browse more elderly safety products!
+    
+                </p>
+              </div>
+              <div class="post__link">
+                <a class="buttonEff" href="https://www.securesafetysolutions.com/">Learn more!</a>
+              </div>
+            </div>
+          </article>
+        
+        
+        
+        
+        </div>
+
+
+
+<!-- Services Section -->
+
+<div class="services" id="services">
+    <h1>Our Services</h1>
+    <div class="services__wrapper">
+        <div class="services__card">
+            <div class="card">
+            <h2>Charity events</h2>
+            <p>By providing medical equipments, health information seminars
+                and health check to different non-profit making organizations, 
+                elderlies can increase their awareness of potential diseases as
+                well as the importance of a healthy lifestyle.</p>
+            
+        </div>
+        </div>
+        <div class="services__card">
+            <h2>Premium health check plan</h2>
+            <p>Our premium health check services include ultrasound bone 
+                densitometers, vital capacity measurement, body composition
+                analyzers, blood pressure measurement and professional report
+                explanation.</p>
+        </div>
+        <div class="services__card">
+            <h2>Medical device renting plan</h2>
+            <p>Our medical device renting plan include bone densitometers, 
+            body composition analyzers, spirometers, blood pressure monitors 
+            and stress & peripheral blood circulation checker.</p>
+            
+        </div>
+        <div class="services__card">
+            <h2>Group activities and NGO collaboration</h2>
+            <p>We provide health information seminars and exercising workshops.
+                 We have collaborated with many NGO's </p>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- Footer remade -->
+
+
+<div class="footer__container" id="footer">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Browse</h2>
+          <a href="#home">Home</a> 
+          <a href="#about">About</a>
+          <a href="#products">Products</a> 
+          <a href="#services">Services</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>More about us</h2>
+          <a href="https://pharmaboardroom.com/interviews/leo-lo-managing-director-euromed-hong-kong/">Article</a> 
+          <a href="http://workin.hk/hk/Company/51706_1.html">Article</a>
+        </div>
+      </div>
+      <div class="footer__link--wrapper">
+
+        <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="coming.html">LinkedIn</a> 
+            <a href="coming.html">Facebook</a>
+          </div>
+
+        <div class="footer__link--items">
+          <h2>Contact us!</h2>
+          <a href="" class="pointer">info@euromedtechltd.com</a>
+           <a href="" class="pointer">+852 3168 2208</a>
+          <a href="" class="pointer">+852 9026 9904</a>
+          <a href="" class="pointer">+852 3893 0308</a>
+        </div>
+        
+      </div>
+    </div>
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo">EuroMed</a>
+        </div>
+        <p class="website__rights">© EuroMed 2021. All rights reserved</p>
+        <div class="social__icons">
+          <a href="https://www.facebook.com/EuroMed-Technologies-CoLtd-1972799502961742/?ref=page_internal" class="social__icon--link" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://hk.linkedin.com/in/hk-euromed-technologies-co-ltd-138288150" class="social__icon--link"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Overflow prevention div -->
+</div>
+ 
+<script src="app.js"></script>
+<script src="typer.js"></script>
+<script src="onScroll.js"></script>
+<script src="click.js"></script>
+<script type="text/javascript">
+    ScrollOut({
+        targets: 'h1, p'
+    })
+</script>
+<script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function (){
+        let progressHeight = (window.pageYOffset / totalHeight)* 100;
+        progress.style.height = progressHeight + "%";
+    }
+</script>
+
+
+
+
+</body>
+
+</html>

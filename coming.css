@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand");
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	height: 100%;
+	color: #000;
+	font-family: "Quicksand", sans-serif;
+}
+
+.bg-image {
+	background: url(images/backgroundComing.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+
+h1 {
+	font-size: 3rem;
+	letter-spacing: 1.5rem;
+	font-weight: 100;
+	margin-bottom: 0.5rem;
+}
+
+.countdown {
+	font-weight: lighter;
+	word-spacing: 20px;
+	font-size: 2rem;
+}
+
+hr {
+	margin: auto;
+	width: 60%;
+	border: 1px solid #000;
+}

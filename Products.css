@@ -1,0 +1,2410 @@
+/* Products offer banner section */
+
+/* ===== Banner for products section ====== */
+
+/* Offer section customization */
+
+/* This section also sets the background for the banner */
+
+.offer__bg{
+    font-family: 'Poppins', sans-serif;
+    background: url('images/pexels-anthony-shkraba-5215021.jpg') no-repeat center/cover;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* positioniing of the banner page */
+
+.offer__data{
+    padding: 3.5rem .25rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Heading in the page */
+
+.offer__title{
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Text cutomization of the description in the banner */
+
+.offer__description{
+    margin-bottom: 2rem;
+    letter-spacing: .2rem;
+}
+
+/* Button in the page with positioning, text customization
+and the coloring */
+
+.buttonEff{
+    display: inline-block;
+    background-color: tomato;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-weight: var(--font-semi-bold);
+    transition: .3s;
+}
+
+/* link with no underline */
+
+.offer__data a{
+    text-decoration: none;
+}
+
+/* color and border radius=how round should the button border should be */
+
+.buttonEff{
+    background: tomato;
+    border-radius: 15px;   
+}
+
+/* 0% width for the pre-set animation */
+
+.buttonEff::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+/* On hover on the div, the underline increases to 100% on 
+.3s transition set in the main class */
+
+.buttonEff:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
+
+
+/* Customization for the whole page of the products page, 
+*this only applies for the elements for in the "Whole" class* */
+
+.whole{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width:1250px){
+    .whole{
+        grid-template-columns: 1fr;
+    }
+}
+
+.wholeBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ========================================== */
+
+
+.card2nd{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: .5s;
+    margin-top: 30px;
+}
+.card2nd .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card2nd .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FAA21A;
+    clip-path: circle(120px at center);
+    transition: .5s;
+}
+.card2nd:hover .circle:before{
+    background: #d0f2ee;
+    clip-path: circle(400px at center);
+}
+
+.card2nd .productPepsi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.card2nd:hover .productPepsi{
+    left: 72%;
+    height: 300px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.card2nd .productPepsi2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.card2nd:hover .productPepsi2{
+    left: 72%;
+    width: 300px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.card2nd .productPepsi1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 220px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.card2nd:hover .productPepsi1{
+    left: 72%;
+    height: 330px;
+    transition: .5s;
+    cursor: pointer;
+}
+.card2nd .logoPepsi{
+    width: 140px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-bottom: -10px;
+}
+.card2nd .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 0px 20px 20px 40px;
+    transition: .5s;
+    opacity: 00;
+    visibility: hidden;
+}
+
+.card2nd:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.card2nd h2{
+    margin-bottom: 20px;
+}
+.card2nd .contentPepsi {
+    color: #404040;
+    font-size: 14px;
+}
+
+.card2nd .contentPepsi span{
+    color: tomato;
+}
+
+.card2nd .content a{
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.card2nd .content a:hover{
+    color: white;
+    background: #FAA21A;
+}
+
+.card2nd .content .Hor{
+    position: relative;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    transition: .3s;
+}
+
+.card2nd .content .Hor:hover{
+    color: white;
+    background: #FAA21A;
+}
+
+.card2nd .content .Pick{
+    position: relative;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size:11px;
+    transition: .3s;
+}
+
+.card2nd .content .Pick:hover{
+    color: white;
+    background: #FAA21A;
+}
+
+
+
+/* =================================== */
+
+
+.cardnd{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: .5s;
+    margin-top: 30px;
+}
+.cardnd .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.cardnd .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #415A68;
+    clip-path: circle(120px at center);
+    transition: .5s;
+}
+.cardnd:hover .circle:before{
+    background: #d0f2ee;
+    clip-path: circle(400px at center);
+}
+
+.cardnd .productPepsi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.cardnd:hover .productPepsi{
+    left: 72%;
+    height: 300px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.cardnd .productPepsi2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.cardnd:hover .productPepsi2{
+    left: 72%;
+    width: 300px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.cardnd .productPepsi1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 220px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.cardnd:hover .productPepsi1{
+    left: 72%;
+    height: 330px;
+    transition: .5s;
+    cursor: pointer;
+}
+.cardnd .logoPepsi{
+    width: 140px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-bottom: -10px;
+}
+.cardnd .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 0px 20px 20px 40px;
+    transition: .5s;
+    opacity: 00;
+    visibility: hidden;
+}
+
+.cardnd:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.cardnd h2{
+    margin-bottom: 20px;
+}
+.cardnd .contentPepsi {
+    color: #404040;
+    font-size: 14px;
+}
+
+.cardnd .contentPepsi span{
+    color: tomato;
+}
+
+.cardnd .content a{
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.cardnd .content a:hover{
+    color: white;
+    background: tomato;
+}
+
+.cardnd .content .Hor{
+    position: relative;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    transition: .3s;
+}
+
+.cardnd .content .Hor:hover{
+    color: white;
+    background: tomato;
+}
+
+.cardnd .content .Pick{
+    position: relative;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size:11px;
+    transition: .3s;
+}
+
+.cardnd .content a:hover{
+    color: white;
+    background: #415A68;
+}
+
+
+/* ==================================== */
+
+
+
+.cardtri{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: .5s;
+    margin-top: 30px;
+}
+.cardtri .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.cardtri .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1684E6;
+    clip-path: circle(120px at center);
+    transition: .5s;
+}
+.cardtri:hover .circle:before{
+    background: #d0f2ee;
+    clip-path: circle(400px at center);
+}
+
+.cardtri .productPepsi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.cardtri:hover .productPepsi{
+    left: 72%;
+    height: 300px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.cardtri .productPepsi2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.cardtri:hover .productPepsi2{
+    left: 72%;
+    width: 300px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.cardtri .productPepsi1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 220px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.cardtri:hover .productPepsi1{
+    left: 72%;
+    height: 330px;
+    transition: .5s;
+    cursor: pointer;
+}
+.cardtri .logoPepsi{
+    width: 140px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-bottom: -10px;
+}
+.cardtri .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 0px 20px 20px 40px;
+    transition: .5s;
+    opacity: 00;
+    visibility: hidden;
+}
+
+.cardtri:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.cardtri h2{
+    margin-bottom: 20px;
+}
+.cardtri .contentPepsi {
+    color: #404040;
+    font-size: 14px;
+}
+
+.cardtri .contentPepsi span{
+    color: tomato;
+}
+
+.cardtri .content a{
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.cardtri .content a:hover{
+    color: white;
+    background: tomato;
+}
+
+.cardtri .content .Hor{
+    position: relative;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    transition: .3s;
+}
+
+.cardtri .content .Hor:hover{
+    color: white;
+    background: tomato;
+}
+
+.cardtri .content .Pick{
+    position: relative;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size:11px;
+    transition: .3s;
+}
+
+.cardtri .content a:hover{
+    color: white;
+    background: #1684E6;
+}
+
+
+/* ============================ */
+
+
+.cardi{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: .5s;
+    margin-top: 30px;
+}
+.cardi .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.cardi .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#FF7F00 ;
+    clip-path: circle(120px at center);
+    transition: .5s;
+}
+.cardi:hover .circle:before{
+    background: #d0f2ee;
+    clip-path: circle(400px at center);
+}
+
+.cardi .productPepsi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.cardi:hover .productPepsi{
+    left: 72%;
+    height: 300px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.cardi .productPepsi2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.cardi:hover .productPepsi2{
+    left: 72%;
+    width: 300px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.cardi .productPepsi1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 220px;
+    transform: translate(-50%, -50%);
+    pointer-events: pointer;
+    transition: .5s;
+}
+
+.cardi:hover .productPepsi1{
+    left: 72%;
+    height: 330px;
+    transition: .5s;
+    cursor: pointer;
+}
+.cardi .logoPepsi{
+    width: 140px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-bottom: -10px;
+}
+.cardi .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 0px 20px 20px 40px;
+    transition: .5s;
+    opacity: 00;
+    visibility: hidden;
+}
+
+.cardi:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.cardi h2{
+    margin-bottom: 20px;
+}
+.cardi .contentPepsi {
+    color: #404040;
+    font-size: 14px;
+}
+
+.cardi .contentPepsi span{
+    color: tomato;
+}
+
+.cardi .content a{
+    position: relative;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.cardi .content a:hover{
+    color: white;
+    background: tomato;
+}
+
+.cardi .content .Hor{
+    position: relative;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    transition: .3s;
+}
+
+.cardi .content .Hor:hover{
+    color: white;
+    background: tomato;
+}
+
+.cardi .content .Pick{
+    position: relative;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 10px;
+    background: white;
+    color: #111;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size:11px;
+    transition: .3s;
+}
+
+.cardi .content a:hover{
+    color: white;
+    background: #FF7F00;
+}
+
+
+
+@media screen and (max-width: 991px){
+    .cardi{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .cardi:hover{
+        height: 570px;
+    }
+    .cardi .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+
+    .cardi:hover .productPepsi1{
+        transform:translateX(-65%) ;
+    }
+    .cardi:hover .productPepsi1{
+        height: 300px;
+        margin-top: 5%;
+    }
+    
+    .Pick{
+        margin-left: 5%;
+    }
+    .Hor{
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .cardtri .content{
+
+        padding: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 991px){
+    .cardtri{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .cardtri:hover{
+        height: 570px;
+    }
+    .cardtri .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .cardtri .logoPepsi{
+        margin-top: -10px;
+        margin-left: 25%;
+    }
+    .cardtri .productPepsi{
+        top: 50%;
+        left: 50%;
+        height: 250px;
+    }
+    .cardtri:hover .productPepsi{
+        transform:translateX(-90%) ;
+    }
+    .cardtri:hover .productPepsi{
+        height: 280px;
+        margin-top: 5%;
+    }
+
+    .cardtri:hover .productPepsi1{
+        transform:translateX(-90%) ;
+    }
+    .cardtri:hover .productPepsi1{
+        height: 300px;
+        margin-top: 5%;
+    }
+    
+    .Pick{
+        margin-left: 5%;
+    }
+    .Hor{
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .cardtri .content{
+
+        padding: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 991px){
+    .card2nd{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .card2nd:hover{
+        height: 570px;
+    }
+    .card2nd .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .card2nd .logoPepsi{
+        margin-top: -10px;
+        margin-left: 25%;
+    }
+    .card2nd .productPepsi{
+        top: 50%;
+        left: 50%;
+        height: 250px;
+    }
+    .card2nd:hover .productPepsi{
+        transform:translateX(-90%) ;
+    }
+    .card2nd:hover .productPepsi{
+        height: 280px;
+        margin-top: 5%;
+    }
+
+    .card2nd:hover .productPepsi1{
+        transform:translateX(-90%) ;
+    }
+    .card2nd:hover .productPepsi1{
+        height: 300px;
+        margin-top: 5%;
+    }
+    
+    .Pick{
+        margin-left: 5%;
+    }
+    .Hor{
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .card2nd .content{
+
+        padding: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 991px){
+    .cardnd{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .cardnd:hover{
+        height: 570px;
+    }
+    .cardnd .content{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .cardnd .logoPepsi{
+        margin-top: -10px;
+        margin-left: 25%;
+    }
+    .cardnd .productPepsi{
+        top: 50%;
+        left: 50%;
+        height: 250px;
+    }
+    .cardnd:hover .productPepsi{
+        transform:translateX(-90%) ;
+    }
+    .cardnd:hover .productPepsi{
+        height: 280px;
+        margin-top: 5%;
+    }
+
+    .cardnd:hover .productPepsi2{
+        transform:translate(-220px,120px);
+    }
+ 
+    
+    .Pick{
+        margin-left: 5%;
+    }
+    .Hor{
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .cardnd .content{
+
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+ .h2 { 
+    position: relative;
+   top: 50%;
+   left: 50%;
+   width: 250px;
+   height: 70px;
+   margin-top: -60px; /* Half the height */
+   margin-left: -125px;
+} 
+
+
+
+.wholepepsi{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wholepepsi{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.wholewrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+@media screen and (max-width: 1300px) {
+    .wholewpepsi{
+        height: 250%;
+    }
+    .wholewrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wholewrapper
+     {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* CARD 1 */
+
+.container{
+    position: relative;
+    z-index: 100;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 550px;
+    background: #e6f4f4;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+}
+.content-1{
+    position: relative;
+    width:100%;
+    height: 35%;
+    background-image: 
+    linear-gradient(to bottom right,#1F3F78,#1F3F78);
+}
+.content-1::after{
+    content: 'EURO';
+    position: absolute;
+    font-family: 'Poppins',sans-serif;
+    left: 28%;
+    top: 20%;
+    font-size: 5.5em;
+    font-weight: 500;
+    color: #ffffff31;
+}
+.content-1 .arrow-left{
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    color: #e2e2e2;
+    font-size: 20px;
+    cursor: pointer;
+}
+.content-1 span{
+    position: absolute;
+    top: 8%;
+    right: 6%;
+    color:#e2e2e2;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.heart i.fa-heart{
+    color: #f00c0c;
+}
+.content-1 .main-image img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 36%;
+    left: 17%;
+    z-index: 100; 
+}
+.content-2 {
+    height: 120px;
+    margin-top: 15px;
+}
+.content-2 .sub-image{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-2 .sub-image img{
+    width: 30px;
+    height: 30px;
+    margin: 70px 7px 0px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px rgba(230, 244, 244, 0.5),
+    5px 5px 5px rgba(70,70,70,0.12);
+    cursor: pointer;
+    border: 1.5px solid #fff;
+    transition: .2s;
+}
+.content-2 .sub-image img:hover{
+    border: 1.5px solid #1F3F78;
+}
+.content-3{
+    position: relative;
+    padding: 5px 20px 10px;
+}
+.branding span:nth-child(1){
+    font-size: 18px;
+    font-weight: 500; 
+}
+.branding h4{
+    font-size: 12px;
+    font-weight: 500;
+    color: #464444;
+}
+.ratings span{
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #fcba26;
+}
+
+.ratings span:nth-child(5){
+    color: #a7a7a3;
+}
+.paragraph p{
+    font-size: 11.5px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.paragraph span{
+    color: #0b67df;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.price{
+    display: flex;
+    margin: 0px 0 10px;
+}
+.space{
+    flex: 1;
+}
+.price span:nth-child(1){
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.price span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.price a{
+    font-size: 12px;
+    text-decoration: none;
+    border:none;
+    background-image: 
+    linear-gradient(to right,#0a52af,rgb(18, 112, 234));
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.price .blueline:nth-child(1){
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 3px;
+    margin-right: 5px;
+    color: #1F3F78;
+}
+.price .blueline{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 4.5px;
+    color: #1F3F78;
+}
+
+
+
+
+
+/* CARD 2 */
+
+
+
+
+.container1{
+    position: relative;
+    z-index: 100;
+}
+.container1 .card1{
+    position: relative;
+    width: 300px;
+    height: 550px;
+    background: #e6f4f4;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+}
+.content-11{
+    position: relative;
+    width:100%;
+    height: 35%;
+    background-image: 
+    linear-gradient(to bottom right,#96191D,#96191D);
+}
+.content-11::after{
+    content: 'EURO';
+    position: absolute;
+    font-family: 'Poppins',sans-serif;
+    left: 28%;
+    top: 20%;
+    font-size: 5.5em;
+    font-weight: 500;
+    color: #ffffff31;
+}
+.content-11 .arrow-left{
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    color: #e2e2e2;
+    font-size: 20px;
+    cursor: pointer;
+}
+.content-11 span{
+    position: absolute;
+    top: 8%;
+    right: 6%;
+    color:#e2e2e2;
+    font-size: 20px;
+    cursor: pointer;
+}
+.heart i.fas{
+    color: #96191D;
+}
+.content-11 .main-image img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 36%;
+    left: 17%;
+    z-index: 100; 
+}
+.content-22 {
+    height: 120px;
+    margin-top: 15px;
+}
+.content-22 .sub-image{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-22 .sub-image img{
+    width: 30px;
+    height: 30px;
+    margin: 70px 7px 0px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px rgba(230, 244, 244, 0.5),
+    5px 5px 5px rgba(70,70,70,0.12);
+    cursor: pointer;
+    border: 1.5px solid #fff;
+    transition: .2s;
+}
+.content-22 .sub-image img:hover{
+    border: 1.5px solid #96191D;
+}
+.content-33{
+    position: relative;
+    padding: 5px 20px 10px;
+}
+.branding1 span:nth-child(1){
+    font-size: 18px;
+    font-weight: 500; 
+}
+.branding1 h4{
+    font-size: 12px;
+    font-weight: 500;
+    color: #464444;
+}
+
+
+.paragraph1 p{
+    font-size: 11.5px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.paragraph1 span{
+    color: #96191D;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.price1{
+    display: flex;
+    margin: 0px 0 10px;
+}
+.space1{
+    flex: 1;
+}
+.price1 span:nth-child(1){
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.price1 span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.price1 a{
+    font-size: 12px;
+    text-decoration: none;
+    border:none;
+    background-image: 
+    linear-gradient(to right,#961919,rgb(143, 28, 28));
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.price1 .bloodline:nth-child(1){
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 3px;
+    margin-right: 5px;
+    color: #96191D;
+}
+.price1 .bloodline{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 4.5px;
+    color: #96191D;
+}
+
+
+
+/* CARD 3 */
+
+
+
+
+.container2{
+    position: relative;
+    z-index: 100;
+}
+.container2 .card2{
+    position: relative;
+    width: 300px;
+    height: 550px;
+    background: #e6f4f4;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+}
+.content-12{
+    position: relative;
+    width:100%;
+    height: 35%;
+    background-image: 
+    linear-gradient(to bottom right,#319F6E,#319F6E);
+}
+.content-12::after{
+    content: 'EURO';
+    position: absolute;
+    font-family: 'Poppins',sans-serif;
+    left: 28%;
+    top: 20%;
+    font-size: 5.5em;
+    font-weight: 500;
+    color: #ffffff31;
+}
+.content-12 .arrow-left{
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    color: #e2e2e2;
+    font-size: 20px;
+    cursor: pointer;
+}
+.content-12 span{
+    position: absolute;
+    top: 8%;
+    right: 6%;
+    color:#e2e2e2;
+    font-size: 20px;
+    cursor: pointer;
+}
+.heart i.fas{
+    color: #319F6E;
+}
+.content-12 .main-image img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 36%;
+    left: 17%;
+    z-index: 100; 
+}
+.content-222 {
+    height: 120px;
+    margin-top: 15px;
+}
+.content-222 .sub-image{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-222 .sub-image img{
+    width: 30px;
+    height: 30px;
+    margin: 70px 7px 0px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px rgba(230, 244, 244, 0.5),
+    5px 5px 5px rgba(70,70,70,0.12);
+    cursor: pointer;
+    border: 1.5px solid #fff;
+    transition: .2s;
+}
+.content-222 .sub-image img:hover{
+    border: 1.5px solid #319F6E;
+}
+.content-32{
+    position: relative;
+    padding: 5px 20px 10px;
+}
+.branding2 span:nth-child(1){
+    font-size: 18px;
+    font-weight: 500; 
+}
+.branding2 h4{
+    font-size: 12px;
+    font-weight: 500;
+    color: #464444;
+}
+
+
+.paragraph2 p{
+    font-size: 11.5px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.paragraph2 span{
+    color: #319F6E;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.price2{
+    display: flex;
+    margin: 27px 0 10px;
+}
+.space{
+    flex: 1;
+}
+.price2 span:nth-child(1){
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.price2 span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.price2 a{
+    font-size: 12px;
+    text-decoration: none;
+    border:none;
+    background-image: 
+    linear-gradient(to right,#319F6E,rgb(28, 143, 95));
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.price2 .Greenline:nth-child(1){
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 3px;
+    margin-right: 5px;
+    color: #319F6E;
+}
+.price2 .Greenline{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 4.5px;
+    color: #319F6E;
+}
+
+
+
+
+
+
+
+/* CARD 4 */
+
+
+
+
+.container4{
+    position: relative;
+    z-index: 100;
+}
+.container4 .card4{
+    position: relative;
+    width: 300px;
+    height: 550px;
+    background: #e6f4f4;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+}
+.content-14{
+    position: relative;
+    width:100%;
+    height: 35%;
+    background-image: 
+    linear-gradient(to bottom right,#CF2027,#CF2027);
+}
+.content-14::after{
+    content: 'EURO';
+    position: absolute;
+    font-family: 'Poppins',sans-serif;
+    left: 28%;
+    top: 20%;
+    font-size: 5.5em;
+    font-weight: 500;
+    color: #ffffff31;
+}
+.content-14 .arrow-left{
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    color: #e2e2e2;
+    font-size: 20px;
+    cursor: pointer;
+}
+.content-14 span{
+    position: absolute;
+    top: 8%;
+    right: 6%;
+    color:#e2e2e2;
+    font-size: 20px;
+    cursor: pointer;
+}
+.heart i.fas{
+    color: #CF2027;
+}
+.content-14 .main-image img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 36%;
+    left: 17%;
+    z-index: 100; 
+}
+.content-24 {
+    height: 120px;
+    margin-top: 15px;
+}
+.content-24 .sub-image{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-24 .sub-image img{
+    width: 30px;
+    height: 30px;
+    margin: 70px 7px 0px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px rgba(230, 244, 244, 0.5),
+    5px 5px 5px rgba(70,70,70,0.12);
+    cursor: pointer;
+    border: 1.5px solid #fff;
+    transition: .2s;
+}
+.content-24 .sub-image img:hover{
+    border: 1.5px solid #CF2027;
+}
+.content-34{
+    position: relative;
+    padding: 5px 20px 10px;
+}
+.branding4 span:nth-child(1){
+    font-size: 18px;
+    font-weight: 500; 
+}
+.branding4 h4{
+    font-size: 12px;
+    font-weight: 500;
+    color: #464444;
+}
+
+
+.paragraph4 p{
+    font-size: 11.5px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.paragraph4 span{
+    color: #CF2027;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.price4{
+    display: flex;
+    margin: 40px 0 10px;
+}
+.space{
+    flex: 1;
+}
+.price4 span:nth-child(1){
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.price4 span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.price4 a{
+    font-size: 12px;
+    text-decoration: none;
+    border:none;
+    background-image: 
+    linear-gradient(to right,#CF2027,rgb(187, 39, 39));
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.price4 .redline:nth-child(1){
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 3px;
+    margin-right: 5px;
+    color: #CF2027;
+}
+.price4 .redline{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 4.5px;
+    color: #CF2027;
+}
+
+
+
+
+/* SESTO Products page */
+
+
+:root {
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    --first-color: #DA2535;
+    --first-color-alt: #C42130;
+    --first-color-send: #DE3B49;
+    --title-color: #161212;
+    --text-color: #5B5757;
+    --text-color-light: #8F8A8A;
+    --body-color: #FEFBFB;
+    --container-color: #FFF;
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+    /*========== Font weight ==========*/
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*========== Margenes ==========*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    /*========== z index ==========*/
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px){
+    :root{
+        --biggest-font-size: 3rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
+
+
+/*========== ACCESSORIES ==========*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+.accessory__container{
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 2rem;
+    font-family: 'Poppins',sans-serif;
+}
+
+@media screen and (max-width: 500px){
+    .accessory__container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.accessory__container img{
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.accessory__content{
+    position: relative;
+    display: grid;
+    padding: .25rem .75rem .75rem;
+    background-color: var(--container-color);
+    box-shadow: 0 2px 6px rgba(65,11,16,.15);
+    border-radius: 1rem;
+}
+
+.accessory__content:hover{
+    box-shadow: 0 3px 12px rgba(65,11,16,.15);
+}
+
+.accessory__img{
+    width: 110px;
+    justify-self: center;
+    margin-bottom: .25rem;
+}
+
+.accessory__title, .accessory__category{
+    text-align: center;
+}
+
+.accessory__title{
+    font-size: var(--normal-font-size);
+}
+
+.accessory__category{
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+    color: var(--text-color-light);
+}
+
+.accessory__preci{
+    font-weight: var(--font-semi-bold);
+    color: #009FE3;
+}
+
+.accessory__button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    font-size: 1.25rem;
+    padding: .5rem .625rem;
+    border-radius: 1rem 0 1rem 0;
+}
+
+.accessory__container img:hover{
+    transform: scale(1.1);
+}
+
+/* Layout */
+
+.bd-container{
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+    font-family: 'Poppins',sans-serif;
+}
+
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+/*========== BUTTONS ==========*/
+.buttonnew{
+    display: inline-block;
+    background-color: #009FE3;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-weight: var(--font-semi-bold);
+    transition: .3s;
+}
+
+.buttonnew:hover{
+    background-color: #016691;
+}
+
+.buttonnew:hover .fa-eye{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.button-link{
+    background: none;
+    padding: 0;
+    color: var(--first-color);
+}
+
+.button-link:hover{
+    background-color: transparent;
+    color: var(--first-color-alt);
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    .accessory__container{
+        grid-template-columns: repeat(3,224px);
+        justify-content: center;
+    }
+
+    .accessory__content{
+        padding: .5rem 1.5rem 1.5rem;
+    }
+
+    .accessory__img{
+        width: 120px;
+        margin-bottom: var(--mb-1);
+    }
+
+    .accessory__title, .accessory__category{
+        text-align: initial;
+    }
+
+    .accessory__button{
+        padding: .75rem;
+    }
+}
+
+@media screen and (min-width: 968px){
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .txtSys{
+        font-size: 12px;
+    }
+    .accessory__container .buttonnew{
+            padding: .7rem 1.15rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.section-title{
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}
+
+
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 1000%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img{
+    width: 10%;
+    float: left;
+}
+
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    5.2% {
+        left: 0;
+    }
+    10.4% {
+        left: -100%;
+    }
+    15.6% {
+        left: -100%;
+    }
+    20.8% {
+        left: -100%;
+    }
+    26% {
+        left: -200%;
+    }
+    31.2% {
+        left: -200%;
+    }
+    36.4% {
+        left: -200%;
+    }
+    41.6% {
+        left: -300%;
+    }
+    46.8% {
+        left: -300%;
+    }
+    52% {
+        left: -300%;
+    }
+    57.2% {
+        left: -400%;
+    }
+    62.4% {
+        left: -400%;
+    }
+    67.6% {
+        left: -400%;
+    }
+    72.8% {
+        left: -500%;
+    }
+    78% {
+        left: -500%;
+    }
+    85% {
+        left: -500%;
+    }
+    90% {
+        left: -600%;
+    }
+    100% {
+        left: -600%;
+    }
+ }
+
+ .imagebackground{
+     background: black;
+     height: 60px;
+ }
+
+ .imagebackground img{
+     width: 150px;
+    position: relative;
+   top: 50%;
+   left: 50%;
+   height: 70px;
+   margin-top: -30px; /* Half the height */
+   margin-left: -75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Elderly{
+    font-family: 'Poppins', sans-serif;
+}
+.Elderly, .Elderly:before, .Elderly:after {
+   box-sizing: border-box;
+ }
+ 
+ .Elderly h1 {
+   margin-top: 0;
+   margin-bottom: 0.25em;
+   font-size: 4em;
+   font-weight: 900;
+   line-height: 0.9;
+ }
+ 
+ .Elderly p {
+   margin: 0;
+   color: #131313;
+ }
+ 
+.Elderly a {
+   text-decoration: none;
+ }
+
+ 
+ figure {
+   margin: 0;
+ }
+ /**
+  * Text Selection
+  */
+ ::-moz-selection {
+   color: #fff;
+   background-color: #d0f2ee;
+   text-shadow: none;
+ }
+ ::selection {
+   color: #fff;
+   background-color: #d0f2ee;
+   text-shadow: none;
+ }
+ 
+ /**
+  * Body
+  */
+ .Elderly body {
+   font-family: "Source Sans Pro", sans-serif;
+   font-size: 100%;
+   line-height: 60;
+   color: #000;
+   background-color: #fff;
+ }
+ @media (min-width: 20em) {
+   .Elderly body {
+     font-size: 102.5%;
+   }
+ }
+ @media (min-width: 30em) {
+   .Elderly body {
+     font-size: 105%;
+   }
+ }
+ @media (min-width: 54em) {
+   .Elderly body {
+     font-size: 107.5%;
+   }
+ }
+ @media (min-width: 64em) {
+   .Elderly body {
+     font-size: 110%;
+   }
+ }
+ @media (min-width: 76.5em) {
+   .Elderly body {
+     font-size: 115%;
+   }
+ }
+ @media (min-width: 114em) {
+   .Elderly body {
+     font-size: 125%;
+   }
+ }
+ 
+ /**
+  * Components
+  */
+.post {
+   min-height: 100vh;
+   width: 100%;
+   border: 0.5em solid #fff;
+ }
+ @media (min-width: 54em) {
+   .post {
+     display: flex;
+     height: 100vh;
+     min-height: 40em;
+   }
+ }
+ .post > *:first-child {
+   position: relative;
+   height: 14em;
+   background-color: #000;
+ }
+ @media (min-width: 30em) {
+   .post > *:first-child {
+     height: 18em;
+   }
+ }
+ @media (min-width: 54em) {
+   .post > *:first-child {
+     flex-basis: 50%;
+     max-width: 50%;
+     height: auto;
+   }
+ }
+ @media (min-width: 76.5em) {
+   .post > *:first-child {
+     flex-basis: 60%;
+     max-width: 60%;
+   }
+ }
+ @media (min-width: 54em) {
+   .post > *:last-child {
+     flex-basis: 50%;
+     max-width: 50%;
+   }
+ }
+ @media (min-width: 76.5em) {
+   .post > *:last-child {
+     flex-basis: 40%;
+     max-width: 40%;
+   }
+ }
+ .post__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 2em;
+   overflow-y: auto;
+ }
+ .post__category {
+   position: relative;
+   font-weight: 600;
+   font-size: 0.9em;
+   text-transform: uppercase;
+   letter-spacing: 0.3em;
+   overflow: hidden;
+   color: tomato;
+ }
+ .post__category:before {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 2px;
+   width: 3em;
+   background-color: tomato;
+   -webkit-animation: slide-in 1s ease-in both 0.5s;
+           animation: slide-in 1s ease-in both 0.5s;
+ }
+ .post__content1 {
+    position: absolute;
+   margin-top:11rem;
+   padding: 0 2em;
+ }
+ @media (min-width: 54em) {
+   .post__content1 {
+     padding: 0 4em;
+   }
+ }
+ /* @media screen and (max-width: 950px){
+     .post__text1{
+         font-size: 14px;
+     }
+ } */
+
+ .post__content1 header{
+     margin-bottom: 20px;
+ }
+
+ .post__time1 {
+   display: inline-block;
+   margin-bottom: 0.5em;
+ }
+ .post__content1 img{
+     width:190px;
+     position: relative;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    margin-top: -30px; /* Half the height */
+    margin-left: -95px;
+ }
+ 
+
+ .post__text1 {
+   font-weight: 300;
+   color: #013CA6;
+   -webkit-animation: fade-in 0.8s ease-in-out both 0.5s;
+           animation: fade-in 0.8s ease-in-out both 0.5s;
+ }
+
+
+
+
+
+ /**
+  * Helpers
+  */
+ .absolute-bg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-position: 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+   -webkit-animation: fade-in 0.8s ease-in-out both 1s;
+           animation: fade-in 0.8s ease-in-out both 1s;
+ }
+ 
+ /**
+  * Animations
+  */
+ @-webkit-keyframes slide-in {
+   0% {
+     transform: translate3d(-100%, 0, 0);
+   }
+   100% {
+     transform: translate3d(0, 0, 0);
+   }
+ }
+ @keyframes slide-in {
+   0% {
+     transform: translate3d(-100%, 0, 0);
+   }
+   100% {
+     transform: translate3d(0, 0, 0);
+   }
+ }
+ @-webkit-keyframes slide-up {
+   0% {
+     opacity: 0;
+     transform: translate3d(0, 100%, 0);
+   }
+   90% {
+     opacity: 1;
+   }
+   100% {
+     transform: translate3d(0, 0, 0);
+   }
+ }
+ @keyframes slide-up {
+   0% {
+     opacity: 0;
+     transform: translate3d(0, 100%, 0);
+   }
+   90% {
+     opacity: 1;
+   }
+   100% {
+     transform: translate3d(0, 0, 0);
+   }
+ }
+ @-webkit-keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ @keyframes fade-in {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+
+
+
+
+
+

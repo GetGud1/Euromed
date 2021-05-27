@@ -1,0 +1,529 @@
+
+
+/* ===== !important -- This css file edits the navbar,
+The mobile Menu, Custom Scrollbar the Hero Page and the
+Animations on the Hero page. There are seperate files for 
+the other pages incuding Javascript files. ===== */
+
+
+/* ===== The "*" below means the code makes the changes to the whole page ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.overflow{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ===== This code gets rid of the normal scrollbar ======*/
+::-webkit-scrollbar{
+    width: 0;
+}
+
+/* ===== This path of the bar, which is a straight line from top to bottom to the right ===== */
+#scrollpath{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+
+/* ===== designs the bar ===== */
+#progressbar{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: Sanimate 5s linear infinite;
+}
+
+/* ===== Function for the animation ===== */
+/* ===== Angles for the color change ===== */
+@keyframes Sanimate {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+/* before and after */
+
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(5px);
+}
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(15px);
+}
+
+/* before and after code ends hrer */
+
+
+/* ===== all three media screens resizes the bar as the screen shrinks ===== */
+
+@media screen and (max-width: 960px){
+    #progressbar{
+        width: 6px;
+    }
+}
+@media screen and (max-width: 768px){
+    #progressbar{
+        width: 5px;
+    }
+}
+@media screen and (max-width: 480px){
+    #progressbar{
+        width: 3px;
+    }
+}
+
+
+
+/* ===== This is a fixed navigation bar section ===== */
+    .navbar {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-weight: 520;
+}
+
+/* ===== Parent div of the nav bar, sets the layout inside the actual bar ===== */
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* ===== The Company Logo ===== */
+
+#navbar__logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#navbar__logo img{
+    height: 100px;
+}
+
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.buttons {
+    letter-spacing: 2px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 165px;
+    border-radius: 4px;
+    color: tomato;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.buttons:hover{
+    background: tomato;
+    color: #fff;
+    box-shadow: 0 0 5px tomato,
+    0 0 25px tomato,
+    0 0 50px tomato,
+    0 0 150px tomato;
+}
+
+
+
+
+.navbar__links:hover {
+    color: orangered;
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+
+
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+
+    .navbar__menu.active {
+        background: white;
+        color: black;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar__logo {
+        padding-left: 25px;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: tomato;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .navbar__btn {
+        padding-bottom: 3rem;
+    }
+    .navbar__menu.active .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 60px;
+        margin: 0;
+    }
+    .navbar__menu.active .buttons:hover{
+        background: none;
+        color: tomato;
+        box-shadow: none;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Hero Section */
+
+.hero {
+    /* background: rgb(19,19,19);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(99, 162, 187) 100%); */
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 200px 0;
+    position: relative;
+    width: 100%;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero__heading {
+    font-size: 80px;
+    margin-bottom: 24px;
+    color: #d0f2ee;
+    z-index: 2;
+}
+
+
+.hero__description {
+    font-size: 60px;
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    z-index: 2;
+}
+.hero__heading span:hover{
+    color: tomato;
+    transition:  .4s ease;
+}
+
+
+.hero__container p:hover{
+    -webkit-transform: scale(0.9);
+    transition: .4s;
+}
+
+.cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+.highlight {
+    border-bottom: 4px solid tomato;
+}
+
+@media screen and (max-width: 960px){
+    .highlight{
+        border-bottom: 0px;
+    }
+}
+
+
+/* ===== Hero Page Media / Display at 768 pixels screeen width ===== */
+
+/* ===== Responsive ===== */
+
+@media screen and (max-width: 768px) {
+    .hero__heading {
+        font-size: 60px;
+    }
+
+    .hero__description {
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+/* ===== Cloud animation on Hero Page ===== */
+/* 
+.hero .clouds{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.hero .clouds img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(8s * var(--i))linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+} */
+
+
+
+.book-btn a{
+    text-decoration: none;
+    background:none;
+    color:#d0f2ee;
+    min-width: 219px;
+    margin-top: 30px;
+    padding: 20px 20px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 800;
+    text-transform:uppercase;
+    font-size:18px;
+    z-index: 2;
+}
+.book-btn a:hover{
+    border:3px solid #d0f2ee;
+    background:none;
+}
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #d0f2ee;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+
+.backgroundcolor{
+    width: 100%;
+}
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
